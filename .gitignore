@@ -6,6 +6,12 @@ out/
 **/*.js.map
 **/*.css.map
 
+# Next.js
+.next/
+out/
+build/
+.nnext/
+
 # PWA specific
 **/sw.js
 **/sw.js.map
@@ -24,3 +30,128 @@ out/
 # Analytics
 **/telemetry/
 **/analytics/
+
+# Package manager
+.pnpm-store/
+.npm/
+.yarn/
+.pnpm-lock.yaml
+npm-shrinkwrap.json
+
+# JavaScript/TypeScript
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging.local
+*.env
+!.env.example
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ/WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Vim
+*.swp
+*.swo
+*~
+*.un~
+
+# Emacs
+*#
+.#*
+\#*#
+.*.swp
+.*.swo
+._*
+
+# Sublime Text
+*.sublime-*
+**/*.sublime-*
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon?
+._*
+*.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+*.kate-swp
+*.pid
+*.lock
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+prisma/*.db
+prisma/*.db-journal
+*.rdb
+*.dump
+
+!.env.example
+!.gitkeep
+!.gitattributes
+!.editorconfig
+!.eslintrc.js
+!.prettierrc
+!.nvmrc
+!.node-version
+!.dockerignore
+!.helmignore
