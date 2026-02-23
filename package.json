@@ -10,28 +10,37 @@
         "learn-to-earn",
         "soroban"
     ],
-    "homepage": "https://github.com/toneflix/learnault",
+    "homepage": "https://github.com/learnault/learnault",
     "repository": {
         "type": "git",
-        "url": "https://github.com/toneflix/learnault.git"
+        "url": "https://github.com/learnault/learnault.git"
     },
     "license": "MIT",
     "author": "Learnault Contributors",
     "scripts": {
-        "dev": "turbo run dev",
-        "build": "turbo run build",
-        "test": "turbo run test",
-        "lint": "turbo run lint",
-        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-        "clean": "turbo run clean && rm -rf node_modules",
-        "changeset": "changeset",
-        "version-packages": "changeset version",
-        "release": "turbo run build && changeset publish"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint .",
+        "test": "vitest",
+        "test:ui": "vitest --ui",
+        "test:coverage": "vitest --coverage",
+        "test:ci": "vitest run"
+    },
+    "dependencies": {
+        "next": "^16.1.1",
+        "react": "19.2.0",
+        "react-dom": "19.2.0"
     },
     "devDependencies": {
-        "@changesets/cli": "^2.26.0",
-        "prettier": "^3.0.0",
-        "turbo": "^1.10.0"
+        "@tailwindcss/postcss": "^4.1.9",
+        "@types/node": "^22",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "postcss": "^8.5",
+        "tailwindcss": "^4.1.9",
+        "typescript": "^5",
+        "vitest": "^4.0.18"
     },
     "packageManager": "pnpm@10.0.0",
     "engines": {

@@ -92,9 +92,7 @@ pnpm lint
 ## Documentation
 
 - [API Documentation](./docs/API.md) - API endpoints and usage
-- [Smart Contracts](./docs/CONTRACTS.md) - Soroban contract documentation
-- [Database Schema](./docs/DATABASE.md) - Database structure
-- [Deployment Guide](./docs/DEPLOYMENT.md) - How to deploy
+- [Code of Conduct](./docs/CODE_OF_CONDUCT.md) - Community guidelines
 - [Contributing Guide](./docs/CONTRIBUTING.md) - How to contribute
 
 ## Contributing
