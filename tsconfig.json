@@ -1,5 +1,6 @@
 {
-  "compilerOptions": {
+  "compilerOptions": {    
+    "forceConsistentCasingInFileNames": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": [
@@ -26,14 +27,18 @@
       {
         "name": "next"
       }
-    ]
-  },
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }, 
+  "exclude": ["node_modules"] 
   "include": [
     "src",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts", 
+    ".next/dev/types/**/*.ts",
+    ".next/types/**/*.ts"
   ]
 }
