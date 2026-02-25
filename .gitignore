@@ -41,6 +41,7 @@ build/
 npm-shrinkwrap.json
 
 # JavaScript/TypeScript
+node_modules/
 dist/
 build/
 out/
