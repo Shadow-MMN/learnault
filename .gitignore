@@ -5,6 +5,8 @@ build/
 out/
 **/*.js.map
 **/*.css.map
+/node_modules
+
 
 # Next.js
 .next/
